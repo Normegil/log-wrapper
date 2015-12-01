@@ -1,7 +1,7 @@
 {
   "name": "log-wrapper",
   "version": "0.1.0",
-  "description": "Wrapper to be able to manage situation where a logger cannot exit",
+  "description": "Wrapper to be able to manage situation where a logger cannot exist",
   "main": "index.js",
   "scripts": {
     "lint": "node_modules/jshint/bin/jshint index.js && node_modules/jscs/bin/jscs .",
