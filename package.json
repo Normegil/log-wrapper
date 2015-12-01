@@ -1,6 +1,6 @@
 {
   "name": "log-wrapper",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Wrapper to be able to manage situation where a logger cannot exit",
   "main": "index.js",
   "scripts": {
