@@ -6,32 +6,32 @@ module.exports = function getLog(logger) {
   return {
     fatal: function fatal(objects, message) {
       if (exist(logger)) {
-        log(logger.fatal, objects, message);
+        log(logger.fatal.bind(logger), objects, message);
       }
     },
     error: function error(objects, message) {
       if (exist(logger)) {
-        log(logger.error, objects, message);
+        log(logger.error.bind(logger), objects, message);
       }
     },
     warn: function warn(objects, message) {
       if (exist(logger)) {
-        log(logger.warn, objects, message);
+        log(logger.warn.bind(logger), objects, message);
       }
     },
     info: function info(objects, message) {
       if (exist(logger)) {
-        log(logger.info, objects, message);
+        log(logger.info.bind(logger), objects, message);
       }
     },
     debug: function debug(objects, message) {
       if (exist(logger)) {
-        log(logger.debug, objects, message);
+        log(logger.debug.bind(logger), objects, message);
       }
     },
     trace: function trace(objects, message) {
       if (exist(logger)) {
-        log(logger.trace, objects, message);
+        log(logger.trace.bind(logger), objects, message);
       }
     },
   };
